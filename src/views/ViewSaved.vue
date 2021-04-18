@@ -26,6 +26,11 @@
         </td>
       </template>
     </jokes-table>
+    <div class="flex justify-center">
+      <router-link to="/new-jokes">
+        <base-button>Get some new Jokes!</base-button>
+      </router-link>
+    </div>
   </div>
 </template>
 <script>
@@ -41,6 +46,9 @@ export default {
   },
   created() {
     this.refreshSaved()
+  },
+  mounted() {
+    this.$emit('changebg', 'bg-red-200')
   },
   methods: {
     async fetchSavedJokes() {

@@ -1,6 +1,6 @@
 <template lang="html">
-  <table class="rounded-t-lg m-5 w-5/6 mx-auto bg-gray-200 text-gray-800">
-    <thead>
+  <table class="rounded-sm m-5 w-5/6 mx-auto bg-gray-800">
+    <thead class="text-white">
       <tr class="text-left border-b-2 border-gray-300">
         <th class="px-4 py-3">Type</th>
         <th class="px-4 py-3">Setup</th>
@@ -25,6 +25,10 @@ export default {
       type: Object,
       required: true,
     },
+    headBg: {
+      type: String,
+      default: 'bg-gray-800',
+    }
   },
 }
 </script>

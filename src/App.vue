@@ -1,22 +1,24 @@
 <template>
-  <h1 class="text-5xl m-5 pt-5">Dadjokes Notes!</h1>
-  <div id="nav">
-    <router-link to="/">Home</router-link>|
-    <router-link to="/new-jokes">Find New Jokes</router-link>|
-    <router-link to="/saved-jokes">Saved Jokes</router-link>
-  </div>
-  <div class="flex justify-center">
-    <div class="container">
-      <router-view @toast="showToast" />
+  <div class="w-screen min-h-screen" :class="background">
+    <h1 class="text-5xl m-5 pt-8 mt-0">Dadjokes Notes!</h1>
+    <div id="nav">
+      <router-link to="/">Home</router-link>|
+      <router-link to="/new-jokes">Find New Jokes</router-link>|
+      <router-link to="/saved-jokes">Saved Jokes</router-link>
     </div>
-  </div>
-  <div class="flex justify-center w-screen">
-    <notification
-      v-if="toast.onload"
-      :msg="toast.msg"
-      :isOn="toast.isOn"
-      :type="toast.type"
-    ></notification>
+    <div class="flex justify-center">
+      <div class="container">
+        <router-view @toast="showToast" @changebg="changeBackground" />
+      </div>
+    </div>
+    <div class="flex justify-center w-screen">
+      <notification
+        v-if="toast.onload"
+        :msg="toast.msg"
+        :isOn="toast.isOn"
+        :type="toast.type"
+      ></notification>
+    </div>
   </div>
 </template>
 <script>
@@ -27,6 +29,7 @@ export default {
   },
   data() {
     return {
+      background: 'bg-gray-200',
       toast: {
         onload: false,
         isOn: false,
@@ -46,6 +49,9 @@ export default {
       setTimeout(() => {
         this.toast.isOn = false
       }, 2000)
+    },
+    changeBackground(newBg) {
+      this.background = newBg
     },
   },
 }

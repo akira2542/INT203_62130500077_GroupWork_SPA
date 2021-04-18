@@ -23,6 +23,42 @@
       "type": "general",
       "id": 213,
       "punchline": "R2 detour. lol."
+    },
+    {
+      "id": 18,
+      "type": "programming",
+      "setup": "Why did the programmer quit his job?",
+      "punchline": "Because he didn't get arrays."
+    },
+    {
+      "id": 21,
+      "type": "general",
+      "setup": "A termite walks into a bar and says...",
+      "punchline": "'Where is the bar tended?'"
+    },
+    {
+      "punchline": "Because it's a little meteor.",
+      "setup": "Why does a Moon-rock taste better than an Earth-rock?",
+      "type": "general",
+      "id": 372
+    },
+    {
+      "punchline": "They were cooked in Greece.",
+      "setup": "Did you know the first French fries weren't actually cooked in France?",
+      "type": "dad",
+      "id": "08862cbb-3418-4655-bb60-ca1eea85a396"
+    },
+    {
+      "id": 83,
+      "setup": "Can February march?",
+      "punchline": "No, but April may.",
+      "type": "general"
+    },
+    {
+      "type": "general",
+      "punchline": "Cliff.",
+      "setup": "What did the mountain climber name his son?",
+      "id": 189
     }
   ]
 }

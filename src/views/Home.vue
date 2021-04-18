@@ -38,6 +38,8 @@ export default {
   data() {
     return {}
   },
-  async mounted() {},
+  async mounted() {
+    this.$emit('changebg', 'bg-white')
+  },
 }
 </script>

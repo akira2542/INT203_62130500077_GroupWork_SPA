@@ -16,6 +16,11 @@
         </td>
       </template>
     </jokes-table>
+    <div class="flex justify-center">
+      <router-link to="/saved-jokes">
+        <base-button>View Saved Jokes</base-button>
+      </router-link>
+    </div>
   </div>
 </template>
 <script>
@@ -32,6 +37,9 @@ export default {
   },
   async created() {
     this.jokes = await this.fetchDadjokes()
+  },
+  mounted() {
+    this.$emit('changebg', 'bg-green-100')
   },
   methods: {
     async fetchDadjokes() {
@@ -51,6 +59,7 @@ export default {
     async save(joke) {
       const res = await this.postToBackend('jokes', joke)
       if (res.status === 201) {
+        this.jokes.splice(this.jokes.indexOf(joke), 1)
         this.$emit('toast', `joked saved`, 'success')
       } else {
         this.$emit('toast', `something went wrong`, 'error')
