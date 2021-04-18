@@ -1,0 +1,28 @@
+{
+  "jokes": [
+    {
+      "type": "general",
+      "punchline": "Cool Ranch!",
+      "id": 183,
+      "setup": "What did the Dorito farmer say to the other Dorito farmer?"
+    },
+    {
+      "setup": "What did the digital clock say to the grandfather clock?",
+      "id": 181,
+      "punchline": "Look, no hands!",
+      "type": "general"
+    },
+    {
+      "id": 329,
+      "setup": "Why did the barber win the race?",
+      "type": "general",
+      "punchline": "He took a short cut."
+    },
+    {
+      "setup": "What do you call a droid that takes the long way around?",
+      "type": "general",
+      "id": 213,
+      "punchline": "R2 detour. lol."
+    }
+  ]
+}
