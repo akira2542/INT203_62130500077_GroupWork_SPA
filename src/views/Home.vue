@@ -12,6 +12,12 @@
       your saved joke too!
     </h3>
     <div class="flex justify-center">
+      <img
+        src="https://i.pinimg.com/originals/57/e2/09/57e209296e586933febadf06e271a3d3.gif"
+        alt="com_truise"
+      />
+    </div>
+    <div class="flex justify-center">
       <base-card bg="bg-gray-600 text-white p-3 m-5">
         <h3 class="font-bold">Definitions</h3>
         <h4><span class="font-bold">type : </span>type of jokes</h4>

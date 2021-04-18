@@ -48,7 +48,7 @@ export default {
     this.refreshSaved()
   },
   mounted() {
-    this.$emit('changebg', 'bg-red-200')
+    this.$emit('changebg', 'bg-yellow-100')
   },
   methods: {
     async fetchSavedJokes() {
